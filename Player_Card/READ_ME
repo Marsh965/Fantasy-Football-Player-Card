@@ -1,0 +1,33 @@
+This Player_Card program was created to extract and analyze data from previous NFL seasons in order to predict breakout player seasons.
+This project has an emphasis on the Fantasy Football side of things in order to help users expedite their research process.
+
+Fantasy_Pros_Data_Get:
+    This file must be ran first in order to web scrape the data from FantasyPros.com
+    You can enter a single year or you can go ahead and scrape all supported years.
+    The user is prompted to enter a year to stat grab all necessary data in csv format in order to run the Player Card
+        - Fantasy Leaders {year}
+        - Fantasy Leaders Weeks 1-17
+        - Team Targets {year}
+        - Positional Projections {year}
+        - Positional Football Stats {year}
+        - Positional Snap Count {year}
+        - Positional Target Data by Team {year}
+        - ADP values for the upcoming year
+
+Player_Card_Run:
+    Once you have scraped your data you are ready to run the player card.
+    The user is first prompted to again enter a year if the csv file for that year cannot be found
+    then it will prompt the user to again enter the correct year or gives an option to terminate the program
+    If the file exists in the directory then the user is prompted to enter a players name to analyze.
+    The players name must be spelled correctly with a space between their first and last name.
+    Names such as A.J., Smith-Schuster, and Beckham Jr. must have correct spelling or else they will not be found.
+
+My_Functions:
+    My file to pull functions from such as web scraping, data cleaning, and mathematical functions.
+
+Known Issues/Bugs:
+    1. Free Agents cannot be viewed
+    2. Players who were traded in the off season show the targets from the team they were previously traded from
+    3. Las Vegas Raiders target file does not exist on FantasyPros.com yet (Probably due to name change)
+    4. The previously Washington Redskins are listed as WAS: Washington so it will need to be updated when name change is official
+
